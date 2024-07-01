@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Contacts Table</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Phone</th>
+    <th>Address</th>
+    <!-- <th>Location</th> -->
+  </tr>
+  {% for hj in cn %}
+
+  <tr>
+    <td>{{ hj.Name }}</td>
+    <td>{{ hj.Age }}</td>
+    <td>{{ hj.Phone }}</td>
+    <td>{{ hj.Address }}</td>
+    <!-- <td>{{ hj.Location }}</td> -->
+  </tr>
+  {% endfor %}
+</table>
+
+</body>
+</html>
